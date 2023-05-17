@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_Point</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    
+    <script src="https://kit.fontawesome.com/809c7e4560.js" crossorigin="anonymous"></script>
+</head>
+<body onload="findLocation()">
+    <div class="weather-site">
+        <i class="fa-solid fa-timer"></i>
+        <div class="container">
+            <h2 class="brand">
+                WeatherPoint
+            </h2>
+            <img src="icon.png"style="height:3em;position: relative;top:-9em;">
+            <div class="empty">
+                <h3 class="temp">16&#176</h3>
+                <div class="city-name">
+                    <h1 class="name">City</h1>
+                </div>
+                <span style="position: absolute;top:28em;left: 30em;">Time :</span>
+                <span class="time" style="position: relative;top:8.5em;left: 33em;">06:09 A:M    
+                </span>
+                
+                <i class="bi bi-calendar2-day" ></i>
+                <span style="position: absolute;top:25em;left: 30em;">Date :</span>
+                <span class="date" style="position: relative;top:5.5em;left: 29em;">
+                    Sunday 20 Nov
+                </span>
+            </div>
+            <div class="weather">
+                <img id="weather-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5_MSd5YCveNW5v17B2srLblp2JkuAyUXtQ&usqp=CAU"
+                    class="icon" style="position: relative;top: -6em;"
+                    alt="icon"
+                    width="90"
+                    height="60">
+                    <span class="condition" style="position: absolute;left:9em;top:25em">Cloudy</span>   
+            </div>
+        </div>
+    
+    <div class="panel">
+            <input type="text"
+            class="search"
+            id="getCityName"
+            placeholder="search-location">
+            <button class="submit" onclick="checkAgain()">
+                <i class="fas fa-search"></i>
+            </button>
+        <div class="area">
+        <ul class="cities">
+            <li class="city" onclick="chamba()">
+                Chamba
+            </li>
+            <li class="city" onclick="bharmour()">
+                Shimla
+            </li>
+            <li class="city" onclick="nurpur()">
+                Nurpur
+            </li>
+            <li class="city" onclick="chandigarh()">
+                Chandigarh
+            </li>
+        </ul>
+        <ul class="details">
+            <h5>weather details -> </h5>
+            <li>
+                <span class="humidity">Humidity 64%</span>
+            </li>
+            <li>
+                <span class="wind-speed">Wind-speed 20km/h</span>
+            </li>
+            <li>
+                <span class="Visibility">Visibility 200</span>
+            </li>
+            <li>
+                <span class="pressure" id="hoJaBhai">Pressure 89%</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>    
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/809c7e4560.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
